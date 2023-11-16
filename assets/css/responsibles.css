@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#blockViwer{
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    left: 0px;
+    right: 0pc;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#loading{
+    width: 100px;
+    height: 100px;
+    border: 4px solid transparent;
+    border-top: 4px solid #000;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#none{
+    display: none;
+}
+#exitHeader{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+#exitHeader img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+header{
+    height: 200px;
+    display: flex;
+    padding: 0px 30px;
+    align-items: center;
+    box-shadow: 0px 10px 15px #00000010;
+}
+#border-header{
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid #7c2ae8;
+}
+#logo{
+    width: 150px;
+    height: 150px;
+    background-color: #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#logo img{
+    width: 100%;
+    height: 100%;
+}
+#dataTxt{
+    margin-left: 20px;
+}
+#nameResponsible{
+    font-size: 35px;
+}
+#emailResponsible{
+    margin: 2px 0px 20px 0px;
+    font-size: 15px;
+}
+#penddings{
+    width: 900px;
+    margin: auto;
+    margin-top: 50px;
+}
+#penddings #title{
+    font-weight: 100px;
+    font-size: 30px;
+    color: #6d6d6d;
+}
+#modal-penddings{
+    margin-top: 20px;
+}
+.card{
+    width: 100%;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px #00000020;
+    position: relative;
+    margin-bottom: 20px;
+}
+.card:last-child{
+    margin-bottom: 0px;
+}
+.areaUp{
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.logoCard{
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 10px;
+    overflow: hidden;
+}
+.logoCard img{
+    width: 100%;
+    height: 100%;
+}
+.nameCard{
+    font-size: 20px;
+    color: #000;
+}
+.emailCard{
+    font-size: 12px;
+    font-weight: 100px;
+}
+.phoneCard{
+    font-size: 16px;
+    margin-top: 10px;
+    color: #000;
+}
+.infoTxt{
+    font-size: 15px;
+}
+.infoSquare span{
+    font-size: 17px;
+    color: #000;
+}
+.infoCard{
+    margin-left: 50px;
+}
+.areaDown{
+    height: 60px;
+    padding: 15px 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+#areaElderly{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    display: flex;
+    background-color: #f4f4f4;
+    padding: 5px;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+#avatarElderly{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #ccc;
+    margin-right: 10px;
+}
+#avatarElderly img{
+    width: 100%;
+    height: 100%;
+}
+#nameElderly{
+    font-size: 14px;
+}
+#emailElderly{
+    font-size: 10px;
+}
+button{
+    margin-left: 10px;
+    cursor: pointer;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+.recused{
+    background-color: rgba(207, 25, 25, 0.815);
+    color: #fff;
+}
+.accept{
+    background-color: rgba(45, 195, 45, 0.894);
+    color: #fff;
+}
+.modalRequest{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    display: none;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s linear;
+}
+.modalContent{
+    background-color: #fff;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: all .2s linear;
+    padding: 20px;
+    text-align: center;
+}
+.modalContent img{
+    width: 80px;
+    height: 80px;
+}
+.msgRequest{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.txtRequest{
+    margin: 20px 0px 0px 0px;
+}
+.resultRequest{
+    font-size: 25px;
+}
+
+/* Modal idoso*/
+
+#area_modal{
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease;
+    z-index: 99;
+}
+#modal{
+    position: fixed;
+    width: 500px;
+    height: auto;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 20px;
+}
+.closeModal i{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    color: #333;
+    cursor: pointer;
+}
+.avatar_modal{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #eee;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.avatar_modal img{
+    width: 100%;
+    height: 100%;
+}
+.info_caregiver_modal{
+    display: flex;
+    align-items: center;
+}
+.name_modal{
+    font-size: 20px;
+}
+.email_modal{
+    font-size: 12px;
+    color: #333;
+}
+.title_date_modal{
+    font-size: 12px;
+    font-weight: 200;
+}
+.info_add{
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 30px;
+}
+.info_add{
+    display: flex;
+    gap: 30px;
+}
+.infoAdd i{
+    margin-right: 5px;
+}
+.info_sec_caregiver{
+    margin-top: 20px;
+    background-color: #eee;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+}
+.tlt_modal{
+    margin-left: 5px;
+    font-weight: bold;
+    color: #7c7c7c;
+    margin-bottom: 5px;
+}
+.tlt_modal:last-child{
+    margin-bottom: 0px;
+}
+.area_describe{
+    margin: 30px 0px 0px 0px;
+}
+.title_modal{
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #7c7c7c;
+}
+
+.modalAssociation{
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    display: flex;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px #00000020;
+}
+.flex{
+    flex: 1;
+}
+.elderly_data{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.responsible_data{
+    height: 100%;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.avatarModalAssociation{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #ccc;
+    margin-right: 10px;
+}
+.avatarModalAssociation img{
+    width: 100%;
+    height: 100%;
+}
+.nameModalAssociation{
+    font-size: 18px;
+    color: #000;
+}
+.emailModalAssociation{
+    font-size: 12px;
+}
+.phoneModalAssociation{
+    margin-top: 10px;
+}

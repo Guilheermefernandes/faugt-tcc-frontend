@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Inter';
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    height: 60px;
+    box-shadow: 0px 0px 15px #00000015;
+}
+#container_header{
+    width: 1000px;
+    background-color: #fff;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo{
+    width: 150px;
+    height: 150px;
+}
+#logo img{
+    width: 100%;
+    height: 100%;
+}
+#search_header input{
+    padding: 10px;
+    border: none;
+    background-color: #eee;
+    border-radius: 5px;
+    width: 400px;
+    outline: none;
+}
+#my_caregiver{
+    padding: 10px;
+    background-color: #7c2ae8;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+#area_info_user{
+    display: flex;
+    align-items: center;
+}
+#avatar_header{
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 10px;
+    overflow: hidden;
+}
+#avatar_header img{
+    width: 100%;
+    height: 100%;
+}
+#info_name{
+    font-size: 14px;
+}
+#info_email{
+    font-size: 10px;
+    font-weight: 200;
+}
+#exit{
+    font-size: 17px;
+    font-weight: 200;
+    text-decoration: underline;
+    cursor: pointer;
+}

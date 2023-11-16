@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/cuidadorElderly.css">
+    <script src="../../assets/js/cuidadorElderly.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="blockViwer">
+        <div id="loading"></div>
+    </div>
+
+    <div id="toGoBack">
+        <button>Voltar</button>
+    </div>
+
+    <div id="modalEvaluation">
+        <p>Avalie seu cuidador!</p>
+        <div id="areaTemp">
+            <div id="areaNotes">
+                <div class="note" data="1">1</div>
+                <div class="note" data="2">2</div>
+                <div class="note" data="3">3</div>
+                <div class="note" data="4">4</div>
+                <div class="note" data="5">5</div>
+            </div>
+            <button id="sendNote">Eviar nota</button>
+        </div>
+        <div id="noteCaregiverArea">
+            <div id="noteCaregiver"></div>
+            <div id="noteBar">/</div>
+            <div id="noteMax">5.0</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="title"><h1></h1></div>
+        <div id="conatiner_data">
+            <div id="modal">
+                <div class="closeModal"><i class="fa-solid fa-circle-xmark"></i></div>
+                <div class="info_caregiver_modal">
+                    <div class="avatar_modal"><img src="" alt=""></div>
+                    <div class="info_caregiver">
+                        <div class="name_modal">Guilherme Fernandes Dias</div>
+                        <div class="email_modal">guilhermefernandesdias@hotmail.com</div>
+                    </div>
+                </div>
+                <div class="info_sec_caregiver">
+                    <div class="phone_modal tlt_modal">
+                        Telefone: <span></span>
+                    </div>
+                    <div class="state_modal tlt_modal">
+                        Estado: <span></span>
+                    </div>
+                    <div class="city_modal tlt_modal">
+                        Cidade: <span></span>
+                    </div>
+                    <div class="neighborhood_modal tlt_modal">
+                        Bairro: <span></span>
+                    </div>
+                </div>
+                <div class="area_describe">
+                    <div class="title_modal">Descrição:</div>
+                    <div class="describe_modal"></div>
+                </div>
+            </div>
+            <button id="desassociation">Desassociar</button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

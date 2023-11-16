@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/signin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../assets/js/endpoints.js"></script>
+    <script src="../assets/js/validator.js" defer></script>
+    <title>Login</title>
+</head>
+<body>
+    <div id="container">
+        <div id="content_done">
+            Olá, seja bem-vindo de volta a MatchMedic! Venha conhecer nossos serviços de ajuda ao idoso.
+            <button>Saiba mais</button>
+        </div>
+        <div id="form_data">
+            <h3>Faça seu login!</h3>
+            <form action="">
+                <div class="area_input">
+                    <div class="icon_input"><i class="fa-solid fa-user"></i></div>
+                    <div class="input_camp_text">
+                        <input type="text" id="email" name="email" placeholder="Digite seu email aqui" data-rules='required|email'>
+                    </div>
+                </div>
+                <div class="area_input">
+                    <div class="icon_input"><i class="fa-solid fa-lock"></i></div>
+                    <div class="input_camp_text">
+                        <input type="password" id="password" name="password" placeholder="Digite sua senha aqui" data-rules='require|password'>
+                    </div>
+                </div>
+                <button id="sendForm">Login</button>
+            </form>
+            <div id="signup">Não possui uma conta? <a href="" id="redirect">Criar conta!</a></div>
+        </div>
+    </div>
+</body>
+</html>

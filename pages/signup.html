@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../assets/js/endpoints.js"></script>
+    <script src="../assets/js/validatorSignup.js" defer></script>
+    <title>Login</title>
+</head>
+<body>
+    <div id="container">
+        <div id="content_done"></div>
+        <div id="form_data">
+            <h3>Crie sua conta agora mesmo!</h3>
+            <form action="">
+                <div class="form_area_1">
+
+                    <div class="area_input">
+                        <div class="icon_input"><i class="fa-solid fa-user"></i></div>
+                        <div class="input_camp_text">
+                            <input type="text" id="name" name="name" placeholder="Digite seu nome" data-rules='required|name'>
+                        </div>
+                    </div>
+    
+                    <div class="area_input">
+                        <div class="icon_input"><i class="fa-solid fa-user"></i></div>
+                        <div class="input_camp_text">
+                            <input type="text" id="lastName" name="lastName" placeholder="Digite seu sobrenome" data-rules='required|lastName'>
+                        </div>
+                    </div>
+    
+                    <div class="area_input">
+                        <div class="icon_input"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="input_camp_text">
+                            <input type="text" id="email" name="email" placeholder="Digite seu email" data-rules='required|email'>
+                        </div>
+                    </div>
+    
+                    <div class="area_input">
+                        <div class="icon_input"><i class="fa-solid fa-phone"></i></div>
+                        <div class="input_camp_text">
+                            <input type="text" id="phone" name="phone" placeholder="Digite seu telefone" data-rules='required|phone'>
+                        </div>
+                    </div>
+    
+                    <div class="area_input">
+                        <div class="icon_input"><i class="fa-solid fa-shield"></i></div>
+                        <div class="input_camp_text">
+                            <input type="cpf" id="cpf" name="cpf" placeholder="Digite seu cpf" data-rules='require|cpf'>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="form_area_2">
+                    <div class="area_input">
+                        <div class="icon_input"><i class="fa-solid fa-user"></i></div>
+                        <div class="input_camp_text">
+                            <input type="number" id="cep" name="cep" placeholder="Digite seu CEP" data-rules='required|cep'>
+                        </div>
+                    </div>
+    
+                    <div class="area_input">
+                        <div class="icon_input"><i class="fa-solid fa-user"></i></div>
+                        <div class="input_camp_text">
+                            <input type="text" id="state" name="state" placeholder="Digite seu estado" data-rules='required|state'>
+                        </div>
+                    </div>
+    
+                    <div class="area_input">
+                        <div class="icon_input"><i class="fa-solid fa-user"></i></div>
+                        <div class="input_camp_text">
+                            <input type="text" id="email" name="city" placeholder="Digite sua cidade" data-rules='required|city'>
+                        </div>
+                    </div>
+    
+                    <div class="area_input">
+                        <div class="icon_input"><i class="fa-solid fa-user"></i></div>
+                        <div class="input_camp_text">
+                            <input type="text" id="neighborhood" name="neighborhood" placeholder="Nome do seu bairro" data-rules='required|neighborhood'>
+                        </div>
+                    </div>
+    
+                    <div class="area_input">
+                        <div class="icon_input"><i class="fa-solid fa-lock"></i></div>
+                        <div class="input_camp_text">
+                            <input type="password" id="password" name="password" placeholder="Crie um senha" data-rules='required|password'>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <select name="" id="select">
+                <option value="elderly">Conta Idoso</option>
+                <option value="responsible">Conta Responsavél</option>
+                <option value="caregiver">Conta Cuidador</option>
+            </select>
+            <button id="sendForm">Criar conta</button>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>

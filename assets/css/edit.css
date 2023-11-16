@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    padding: 20px;
+    width: 500px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+input[type=file]{
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+}
+#textArea{
+    margin-top: 10px;
+}
+textarea{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+    padding: 10px;
+}
+#send{
+    padding: 15px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #7c2ae8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
